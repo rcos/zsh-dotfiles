@@ -1,0 +1,40 @@
+[push]
+  default = simple
+[color]
+  status = auto
+	ui = true
+  branch = auto
+  diff = auto
+[diff]
+  renames = copies
+[merge]
+  log = true
+  stat = true
+[alias]
+  aa = add --all
+  ap = add --patch
+  ca = commit --amend
+  ci = commit -v
+  co = checkout
+  count = !git shortlog -sn
+  # List contributors with number of commits
+  contributors = shortlog --summary --numbered
+[apply]
+  whitespace = fix
+[core]
+  excludesfile = ~/.gitignore
+  whitespace = space-before-tab,-indent-with-non-tab,trailing-space
+  autocrlf = input
+  compression = 9
+  editor = vim
+  preloadindex = true
+[commit]
+  template = ~/.gitmessage
+[pack]
+  threads = 0
+[include]
+  path = ~/.gitconfig.local
+[branch]
+  autosetupmerge = true
+[advice]
+  statusHints = false

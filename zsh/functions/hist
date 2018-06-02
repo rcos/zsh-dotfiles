@@ -1,0 +1,5 @@
+# Greps history
+
+function hist() {
+  history 0 | grep "$1";
+}
