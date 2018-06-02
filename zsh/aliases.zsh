@@ -63,20 +63,8 @@ alias version='lsb_release -a'
 # python -m SimpleHTTPServer 8000
 alias serve='echo "Serving $(pwd) at \n\n\t http://localhost:3003 \n" && python -m SimpleHTTPServer 3003'
 
-# CD aliases
-alias rpi='cd ~/MEGA/rpi/Semesters/2018_Spring'
-alias opsys='cd ~/MEGA/rpi/Semesters/2018_Spring/OPSYS'
-alias websys='cd ~/MEGA/rpi/Semesters/2018_Spring/WEBSYS'
-
 # Logout helper
 alias lo='logout'
-
-# Hub
-# eval "$(hub alias -s)"
-
-# alias brewu="brew update && brew upgrade --all && brew doctor && brew cleanup"
-alias latexmk='latexmk -pdf -pvc'
-alias flushdns='sudo killall -HUP mDNSResponder'
 
 # Include custom aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
